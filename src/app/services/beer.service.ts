@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 import { IBeer } from '../interfaces/ibeer';
 
@@ -15,5 +16,9 @@ export class BeerService {
 
   getAll(): Observable<IBeer[]> {
     return this.http.get<IBeer[]>(this._url);
+  }
+
+  getNewBeer(): Observable<IBeer[]> {
+    //var newBeer = this.http.get<IBeer[]>(this._url). *filter for a single beer here*
   }
 }
