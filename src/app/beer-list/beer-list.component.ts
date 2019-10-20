@@ -24,9 +24,9 @@ export class BeerListComponent implements OnInit {
   //   .subscribe(data => (this.beerList = data));
   // }
 
-  getABeer() {
-    this.beerService.getNewBeer()
-    .subscribe(data => (this.beerList = data));
-  }
+  // getABeer() {
+  //   this.beerService.getSingleBeer()
+  //   .subscribe(data => (this.beerList = data));
+  // }
 
 }
