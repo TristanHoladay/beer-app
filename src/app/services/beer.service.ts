@@ -18,7 +18,10 @@ export class BeerService {
     return this.http.get<IBeer[]>(this._url);
   }
 
-  getNewBeer(): Observable<IBeer[]> {
-    //var newBeer = this.http.get<IBeer[]>(this._url). *filter for a single beer here*
-  }
+  // getOneBeer(name: string): Observable<IBeer[]> {
+  //   var singleBeer = this.http.get<IBeer[]>(this._url).map(beers => {
+  //   let beer =  beers.filter(b => b.name === name);
+  //   return (beer.length > 0 ) ? beer[0] : null;
+  //   });
+  // }
 }
